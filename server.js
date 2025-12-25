@@ -24,7 +24,7 @@ const app = express();
 // Middleware
 app.use(cors({
     origin: process.env.CLIENT_URL,
-    credentials: true
+    "https://workn-ai-frontend.vercel.app": true
 }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
